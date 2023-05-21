@@ -158,7 +158,7 @@ const[choiceFile,setChoiceFile]=useState([null,null])
           {newQuestion.type === 'mcq' && (
             <Form.Group >
               <Form.Label>Answer:</Form.Label>
-              <Form.Select name="answer"  value={newQuestion.answer} onChange={handleNewQuestionChange} style={{width:'20%'}}>
+              <Form.Select name="answer"  value={newQuestion.answer} onChange={handleNewQuestionChange} style={{width:'60%'}}>
               <option value="">select option</option>
                 {newQuestion.choices.map((choice, index) => (
                  

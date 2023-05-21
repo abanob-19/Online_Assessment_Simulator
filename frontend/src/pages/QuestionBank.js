@@ -110,7 +110,7 @@ const isImageAttachment = (attachment) => {
       const handleFinishEditChoice =async (newChoice,question) => {
         // const updatedQuestionBank = { ...questionBank };
         // updatedQuestionBank.questions[editedChoiceIndex].choices[editedChoice] = newChoice;
-        if(newChoice==""&&!editedFile)
+        if(newChoice==""&&(!editedFile&&!question.choiceAttachments[editedChoiceIndex]))
         alert("Choice can't be empty");
         else{
         question.choices[editedChoiceIndex] = newChoice;

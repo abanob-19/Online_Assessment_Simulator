@@ -53,7 +53,7 @@ return (
   <div>
   <StudentNavbar/>
   <div style={{ paddingTop: '72px' , textAlign: "center"}} >
-    <h1>My Grades</h1>
+    <h1 style={{color:'white'}}>My Grades</h1>
     <table style={{ borderCollapse: 'collapse', width: '40%' , backgroundColor: 'white' , margin:"auto" }}>
       <thead>
         <tr>

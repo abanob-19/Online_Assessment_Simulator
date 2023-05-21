@@ -540,10 +540,10 @@ const handleDrawingUpdate = useCallback((question, data,index) => {
       <StudentNavbar />
 
       {/* Course name */}
-      <h1 style={{ paddingTop: '72px', marginBottom: '36px', textAlign: 'center' }}>{courseName.charAt(0).toUpperCase()+courseName.slice(1)}</h1>
+      <h1 style={{ paddingTop: '72px', marginBottom: '36px', textAlign: 'center' ,color:'white'}}>{courseName.charAt(0).toUpperCase()+courseName.slice(1)}</h1>
 
       {/* Title */}
-      <h2 style={{ marginBottom: '72px', textAlign: 'center' }}>{title.charAt(0).toUpperCase()+title.slice(1)}</h2>
+      <h2 style={{ marginBottom: '72px', textAlign: 'center' , color:'white'}}>{title.charAt(0).toUpperCase()+title.slice(1)}</h2>
 
       {/* Return button */}
       <Button
