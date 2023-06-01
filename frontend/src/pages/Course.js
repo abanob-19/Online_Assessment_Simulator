@@ -58,9 +58,20 @@ const[newBank,setNewBank]=useState(false)
 
    const handleNewQuestionBankSubmit = async () => {
     // Send a POST request to create the new question bank
+  //check that newQuestionBankName is not in questionBanks
+
     if(newQuestionBankName==null||newQuestionBankName==""){
       alert("Please enter a name for the question bank")
       return
+    }
+    console.log(questionBanks)
+    for(let i=0;i<questionBanks.length;i++)
+    {
+      if(questionBanks[i].title==newQuestionBankName)
+      {
+        alert("A question bank with this name already exists")
+        return
+      }
     }
     setLoading(true)
     fetch(`/instructor/addQuestionBank`, {
